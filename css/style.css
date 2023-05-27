@@ -733,9 +733,19 @@ p {
   border-radius: 4px;
   padding-left: 38px;
 }
-.form-text {
+
+.modal-label-text {
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--color-slate);
+}
+.modal-wrapper {
+  position: relative;
+}
+.icon-modal-form {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
