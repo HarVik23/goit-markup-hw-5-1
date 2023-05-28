@@ -516,10 +516,6 @@ p {
 .footer-form {
 }
 .footer-form-text {
-  left: 57.5%;
-  right: 37.29%;
-  top: 32.05%;
-  bottom: 60.26%;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -555,7 +551,7 @@ p {
   border-color: transparent;
   background-color: var(--color-ocean);
   border-radius: 4px;
-  fill: #ffffff;
+
   margin-left: 24px;
 }
 .icon-send-footer {
@@ -716,7 +712,7 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--function-durection);
-  padding: 24px;
+  padding: 72px 24px 24px;
 }
 .modal-close-btn {
   position: absolute;
@@ -748,53 +744,61 @@ p {
 }
 
 .text-modal {
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
-  width: 360px;
-  height: 24px;
-  left: 535px;
-  bottom: 500px;
-  padding-top: ;
-}
-
-.modal-form-input {
-  width: 100%;
-  height: 40px;
-  border: 1px solid var(--color-light-slate);
-  border-radius: 4px;
-  padding-left: 38px;
-  fill: var(--color-navy-blue);
-  transition: ;
 }
 
 .modal-label-text {
   display: block;
+  margin-bottom: 6px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--color-slate);
 }
+
 .modal-wrapper {
   position: relative;
   padding-bottom: 8px;
 }
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--color-light-slate);
+  border-radius: 4px;
+  padding-left: 38px;
+  fill: var(--color-navy-blue);
+  transition: outline 250ms var(--function-durection);
+}
+
+.modal-form-input:hover,
+.modal-form-input:focus {
+  outline: 1px solid var(--color-ocean);
+}
+
 .icon-modal-form {
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translate(0, -50%);
+  right: 4px;
   fill: currentColor;
-  transition: background-color var(--function-durection);
+  transition: fill 250ms var(--function-durection);
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 
-.icon-modal-form:hover,
-.icon-modal-form:focus {
-  color: var(--color-iris);
-  border-color: var(--color-iris);
+.modal-form-input:hover + .icon-modal-form,
+.modal-form-input:focus + .icon-modal-form {
+  fill: var(--color-iris);
 }
 
 .modal-comment {
@@ -803,13 +807,21 @@ p {
   width: 100%;
   padding: 8px;
   padding-left: 16px;
+  margin-bottom: 16px;
   border: 1px solid var(--color-navy-blue);
   border-radius: 4px;
   transition: border-color var(--color-navy-blue) var(--function-durection);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
-.modal-comment.modal-comment:fokus {
+
+.modal-comment:hover,
+.modal-comment:focus {
   outline: none;
-  border-color: var(--color-iris);
+  outline: 1px solid var(--color-iris);
 }
 .form-agreement {
   display: flex;
