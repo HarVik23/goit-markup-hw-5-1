@@ -418,9 +418,11 @@
 
 
             <div class="form-box">
-                <form class="" action="">
-                    <label class="" for="">Subscribe</label>
-                    <input class="subscribe-form" type="text" placeholder="Email" name="subscribe_email"
+
+                <form class="footer-form">
+                    <p class="footer-form-text">Subscribe</p>
+
+                    <input class="subscribe-form" type="email" placeholder="Email" name="subscribe_email"
                         id="subscribe_email" />
                 </form>
 
@@ -481,20 +483,19 @@
                     </div>
 
 
-
-                    <label for="modal_comment">Comment
+                    <label class="modal-label-text" for="modal_comment">Comment
                         <textarea class="modal-comment" name="modal_comment" id="modal_comment"
                             placeholder="Text input"></textarea>
                     </label>
 
 
-                    <input id="accept" type="checkbox" class="modal-form-checkbox" name="modal_agreement">
-                    <label for="accept" class="modal-checkbox">I accept the terms and conditions of the <a
-                            href="">Privacy
-                            Policy></a>
+                    <label class="form-agreement" for="modal-agreement">
+                        <input class="form-check-input" type="checkbox" name="modal-agreement" id="modal-agreement" />
+                        <span class="agreement-text">I accept the terms and conditions of the
+                            <a class="agreement-link" href="">Privacy Policy</a></span>
                     </label>
 
-                    <button class="buton-send" type="submit">Send</button>
+                    <button class="button-send" type="submit">Send</button>
 
             </form>
         </div>
