@@ -780,13 +780,13 @@ p {
 }
 
 .modal-label-text {
-  display: inline-block;
+  display: block;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--color-slate);
+  color: #8e8f99;
 }
 
 .modal-wrapper {
@@ -796,12 +796,13 @@ p {
 .modal-form-input {
   width: 100%;
   height: 40px;
-
+  background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
   transition: border-color 250ms var(--function-durection);
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus {
@@ -823,6 +824,7 @@ p {
 
 .modal-form-input:focus + .icon-modal-form {
   fill: var(--color-iris);
+  border-color: #4d5ae5;
 }
 .fild-textarea {
   margin-bottom: 16px;
@@ -833,6 +835,8 @@ p {
   height: 120px;
   width: 100%;
   padding: 8px 16px;
+  background-color: transparent;
+  outline: transparent;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -842,11 +846,12 @@ p {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-comment:focus {
   outline: none;
-  border: 1px solid var(--color-ocean);
+  border-color: #4d5ae5;
 }
 .fild-chekc {
   margin-bottom: 24px;
@@ -917,21 +922,23 @@ p {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--color-ocean);
+  color: var(--color-iris);
 }
 
 .button-send {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 169px;
+  display: block;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  min-width: 169px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  background-color: #4d5ae5;
   height: 56px;
-
+  border: none;
   margin-left: auto;
   margin-right: auto;
 
-  background-color: var(--color-ocean);
   color: var(--color-white);
   border-color: transparent;
   border-radius: 4px;
