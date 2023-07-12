@@ -598,6 +598,12 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
+
+.btn-send-footer:hover,
+.btn-send-footer:focus {
+  background-color: var(--color-ocean);
+}
+
 .icon-send-footer {
   fill: currentColor;
   margin-left: 16px;
@@ -974,6 +980,11 @@ p {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.button-send:hover,
+.button-send:focus {
+  background-color: var(--color-ocean);
+}
+
 /* .buton-send {
   font-weight: 500;
   cursor: pointer;
